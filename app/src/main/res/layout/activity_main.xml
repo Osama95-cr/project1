@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_proj_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tourism Mangement"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/top_dests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_proj_name"
+        android:text="Top Destinations"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/top_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_dests"
+        android:layout_marginTop="20dp"
+        android:weightSum="4"
+        >
+
+        <TextView
+            android:id="@+id/hunza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hunza"
+            android:padding="5sp"
+            android:background="#17CF9B"
+            android:textColor="@color/black"
+            android:layout_marginRight="2sp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:clickable="true"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/shogran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shogran"
+            android:padding="5sp"
+            android:background="#17CF9B"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:layout_marginRight="2sp"
+            android:clickable="true"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/skardu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skardu"
+            android:padding="5sp"
+            android:gravity="center"
+            android:background="#17CF9B"
+            android:textColor="@color/black"
+            android:layout_marginRight="2sp"
+            android:textAllCaps="true"
+            android:clickable="true"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/chitral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chitral"
+            android:padding="5sp"
+            android:background="#17CF9B"
+            android:textColor="@color/black"
+            android:layout_marginRight="2sp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:clickable="true"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/your_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_dests"
+        android:layout_marginTop="60dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/my_dest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choose your destinations"
+            android:textStyle="bold"
+            tools:context="com.example.project.MapsActivityHome"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
